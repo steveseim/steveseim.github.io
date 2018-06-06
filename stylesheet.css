@@ -1,3 +1,24 @@
+
+.left {
+    background: LightSkyBlue;
+    grid-area: leftcontent;
+  }
+  
+.right {
+    background: LightPink;
+    grid-area: rightcontent;
+  }
+  
+#profile-photo {
+    display:grid;
+    grid-area: headerL;
+}
+
+#name {
+    display: grid;
+    grid-area: headerR;
+}
+
 .main-container {
     width: 100%;
     display: grid;
@@ -11,14 +32,17 @@
       "footer";
 }
 
-.left {
-  background: LightSkyBlue;
-  grid-area: leftcontent;
-}
-
-.right {
-  background: LightPink;
-  grid-area: rightcontent;
+#right {
+    display:grid;
+    /*
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    */
+    grid-template-areas: 
+    "headerL headerL headerR headerR"
+    "body body body body"
+    "footer footer footer footer"
+    ;
 }
 
 @media(min-width: 500px) {
