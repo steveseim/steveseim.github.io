@@ -24,7 +24,7 @@
 @media(min-width: 500px) {
   .main-container{
     grid-template-columns: 60% 40%;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: 50px repeat(4,1fr) 50px;
     grid-gap: 10px;
     grid-template-areas: 
       "header header"
@@ -37,12 +37,10 @@
 }
 
 .left {
-    background: LightSkyBlue;
     grid-area: leftcontent;
   }
   
 .right {
-    background: LightPink;
     grid-area: rightcontent;
   }
   
@@ -58,4 +56,10 @@
 .footer {
     background: lightsalmon;
     grid-area: footer;
+}
+
+#t-p-art {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
 }
