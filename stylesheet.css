@@ -25,7 +25,7 @@
   .main-container{
     grid-template-columns: 60% 40%;
     grid-template-rows: 50px repeat(4,1fr) 50px;
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-areas: 
       "header header"
       "leftcontent rightcontent"
@@ -48,6 +48,7 @@
     display: flex;
 }
 
+/*
 .header {
     background: lightseagreen;
     grid-area: header;
@@ -57,9 +58,19 @@
     background: lightsalmon;
     grid-area: footer;
 }
+*/
 
 #t-p-art {
     display: block;
     margin: 0 auto;
     max-width: 500px;
+}
+
+.project-description-panel dt {
+    margin-top: 1.25em;
+}
+
+body {
+    background: rgb(227,255,231);
+    background: linear-gradient(90deg, rgba(227,255,231,1) 0%, rgba(217,231,255,1) 100%); 
 }
