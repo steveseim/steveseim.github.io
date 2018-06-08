@@ -7,26 +7,32 @@
     <link rel='stylesheet' href='css/bootstrap.css'>
     <link rel='stylesheet' href='stylesheet.css'>
     <link rel='stylesheet' href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel='stylesheet' href='css/fontawesome-all.css'>
     <title>Steven Seim</title>
 </head>
 <body>
     <div class='main-container pr-4'>
-        <div class='header'></div>
+        <div class='header'><hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); "></div>
       <div class='container'>
         <div id='left'>
             <div class='row'>
                 <div class='col-12 col-md-3 '>
-                   <div class='nav flex-column nav-tabs' id='v-tabs' style="border:0;" role='tablist' aria-orientation='vertical'>
-                      <a class='nav-link side-button text-center' data-toggle='tab' href='#nav-1' role='tab'>Timing Program</a>
-                      <a class='nav-link side-button text-center' data-toggle='tab' href='#nav-2' role='tab'>This Website (duh)</a>
+                   <div class='nav flex-column nav-tabs' id='v-tabs' role='tablist' aria-orientation='vertical'>
+                      <a class='nav-link side-button text-center' data-toggle='tab' href='#nav-1' role='tab'><span class="align-middle">Timing Program</span></a>
+                      <a class='nav-link side-button text-center' data-toggle='tab' href='#nav-2' role='tab'>This Website</a>
                    </div>
                 </div>
                 <div class='col-12 col-md-9 '>
-                   <div class='tab-content' id="v-tabs-tabContent">
-                      <div class='tab-pane fade project-description-panel' id='nav-1' role='tabpanel'>
+                   <div class='tab-content' id="v-tabs-tabContent" style="height:100%"> 
+                        <div class='tab-pane show active project-description-panel' id='nav-0'>
+                           <h4 class='text-center text-dark'></h4> 
+                        </div>
+
+                      <div class='tab-pane fade project-description-panel transparent-box' id='nav-1' role='tabpanel'>
                           <div class="top-border-box">
-                            <div class="top-left-border"></div>
-                            <div class="top-right-border"></div>
+                            <div class="top-left-border animated rotateInDownLeft"></div>
+                            <div class="top-right-border animated rotateInDownRight"></div>
                           </div>
                           <h4 class='text-center'>Timing Program</h4>
                           <dl class='text-center'>
@@ -38,19 +44,18 @@
                                   <p>This is a small app I made for a previous job at a video production company. It was meant to be used by the video editors working there. It is designed to take in a number of pictures being used, length of video, scenery options the company provided and more customized choices. It output the number of frames needed to import each picture into the video editing application so that the video length matched with pre-cut songs.</p>
                                   <br>
                                   <p>It was frozen into a single-file .exe with PyInstaller.</p>
-                                  <a href="https:www.github.com/steveseim/Timing-Program" target='_blank'>Timing Program on Github</a>
+                                  <a href="https:www.github.com/steveseim/Timing-Program" target='_blank'>Check it out on Github</a>
                               </dd>
                           </dl>
-                          <img class='pt-4' src='photos/Timing-Program-GUI.png' alt='A picture of the timing program running' id='t-p-art'/>
                           <div class="bottom-border-box">
-                                <div class="bottom-left-border"></div>
-                                <div class="bottom-right-border"></div>
+                                <div class="bottom-left-border animated rotateInUpLeft"></div>
+                                <div class="bottom-right-border animated rotateInUpRight"></div>
                           </div>                      
                         </div>
-                      <div class='tab-pane fade project-description-panel' id='nav-2' role='tabpanel'> 
+                      <div class='tab-pane fade project-description-panel transparent-box' id='nav-2' role='tabpanel'> 
                           <div class="top-border-box">
-                                  <div class="top-left-border"></div>
-                                  <div class="top-right-border"></div>
+                                  <div class="top-left-border animated rotateInDownLeft"></div>
+                                  <div class="top-right-border animated rotateInDownRight"></div>
                           </div>
                           <h4 class='text-center'>Personal Website</h4>
                           <dl class='text-center'>
@@ -59,39 +64,57 @@
 
                               <dt>Hosted On</dt>
                               <dd>Github pages. Seriously, it's free and awesome.</dd>
-                              <br><br><br>
-                              <dt>I don't think you need a picture of this one.</dt>
+
+                              <dt>What is it?</dt>
+                              <dd>
+                                  <p>The website you're looking at.</p> 
+                                  <p> It's not great, I definitely started with an idea that changed several times as I was working on it. But I learned a lot and will keep making changes as I go.</p>
+                                  <p> I mean, those buttons end up in the middle when this site is on mobile. That's dumb right? But I couldn't think of a better option yet by the time I wanted to make this live.</p>
+                            </dd>
                           </dl>
                           <div class="bottom-border-box">
-                                <div class="bottom-left-border"></div>
-                                <div class="bottom-right-border"></div>
+                                <div class="bottom-left-border animated rotateInUpLeft"></div>
+                                <div class="bottom-right-border animated rotateInUpRight"></div>
                           </div>
                       </div>
                    </div>      
                 </div>
+                
              </div>
         </div>
       </div>
         <div id='right'>
-            <div class='h2 text-center' id='name'>Steven Seim</div>
-            <img src='#' alt="This will be a picture of me" id='profile-photo'/>
-            
-            <br>
-            
-            <div class='h4 px-5'>
-                I'm a (constantly) learning developer most proficient in web and python. Completed projects are listed on the left with tools and technologies I used. I'm good with Javascript, HTML, CSS, and Python.
+            <div class='h1 text-center' id='name-row'>
+                <a href='https://codepen.io/steveseim/#' target="_blank" class='mr-3'>
+                    <div id='codepen-icon' class='align-middle'>
+                        <i class="fab fa-codepen mx-1 my-1"></i>
+                    </div>
+                </a> 
+                
+                <span id='name-text' class='ml-1'>Hi, I'm Steve.</span>
+                
+                <a href='https://www.github.com/steveseim' target='_blank'>
+                    <div id="github-icon">
+                        <i class="fab fa-github-square fa-fw fa-lg ml-3"></i>
+                    </div>
+                </a>
             </div>
             <br>
-            <a href="https:www.github.com/steveseim" target='_blank'>Here is my GitHub</a>
+            <h4 class='px-5 text-center'>
+                <p>I'm a (constantly) learning developer focusing on web through Javascript and Python. Completed projects are listed on the left with tools and technologies I used. I'm good with Javascript, HTML, CSS, and Python.</p>
+                <p>I've gone through much of FreeCodeCamp and several courses on EDX.org. I'm continuing to work on small projects to show what I know. Keep an eye on my Github and on this site.</p>
+            </h4>
+            <br>
 
         </div>
 
-        <div class='footer'></div>
+        <div class='footer'><hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); "></div>
 
     </div>
 
     <script src='js/jquery-3.3.1.slim.min.js'></script>
     <script src='js/popper.min.js'></script>
     <script src='js/bootstrap.js'></script>
+    <script defer src="js/fontawesome-all.js"></script> 
 </body>
 </html>
