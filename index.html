@@ -12,17 +12,21 @@
     <div class='main-container pr-4'>
         <div class='header'></div>
         
-        <div class='left'>
+        <div id='left'>
             <div class='row'>
                 <div class='col-3'>
-                   <div class='nav flex-column nav-tabs' id='v-tabs' role='tablist' aria-orientation='vertical'>
-                      <a class='nav-link side-button' data-toggle='tab' href='#nav-1' role='tab'>Timing Program</a>
-                      <a class='nav-link side-button' data-toggle='tab' href='#nav-2' role='tab'>This Website (duh)</a>
+                   <div class='nav flex-column nav-tabs' id='v-tabs' style="border:0;" role='tablist' aria-orientation='vertical'>
+                      <a class='nav-link side-button text-center' data-toggle='tab' href='#nav-1' role='tab'>Timing Program</a>
+                      <a class='nav-link side-button text-center' data-toggle='tab' href='#nav-2' role='tab'>This Website (duh)</a>
                    </div>
                 </div>
                 <div class='col-9'>
                    <div class='tab-content' id="v-tabs-tabContent">
-                      <div class='tab-pane fade active project-description-panel' id='nav-1' role='tabpanel'>
+                      <div class='tab-pane fade project-description-panel' id='nav-1' role='tabpanel'>
+                          <div class="top-border-box">
+                            <div class="top-left-border"></div>
+                            <div class="top-right-border"></div>
+                          </div>
                           <h4 class='text-center'>Timing Program</h4>
                           <dl class='text-center'>
                               <dt>Built With</dt>
@@ -37,8 +41,16 @@
                               </dd>
                           </dl>
                           <img class='pt-4' src='photos/Timing-Program-GUI.png' alt='A picture of the timing program running' id='t-p-art'/>
-                      </div>
+                          <div class="bottom-border-box">
+                                <div class="bottom-left-border"></div>
+                                <div class="bottom-right-border"></div>
+                          </div>                      
+                        </div>
                       <div class='tab-pane fade project-description-panel' id='nav-2' role='tabpanel'> 
+                          <div class="top-border-box">
+                                  <div class="top-left-border"></div>
+                                  <div class="top-right-border"></div>
+                          </div>
                           <h4 class='text-center'>Personal Website</h4>
                           <dl class='text-center'>
                               <dt>Built With</dt>
@@ -49,18 +61,22 @@
                               <br><br><br>
                               <dt>I don't think you need a picture of this one.</dt>
                           </dl>
+                          <div class="bottom-border-box">
+                                <div class="bottom-left-border"></div>
+                                <div class="bottom-right-border"></div>
+                          </div>
                       </div>
                    </div>      
                 </div>
              </div>
         </div>
-        <div class='right'>
+        <div id='right'>
             <div class='h2 text-center' id='name'>Steven Seim</div>
             <img src='#' alt="This will be a picture of me" id='profile-photo'/>
             
             <br>
             
-            <div class='h4'>
+            <div class='h4 px-5'>
                 I'm a (constantly) learning developer most proficient in web and python. Completed projects are listed on the left with tools and technologies I used. I'm good with Javascript, HTML, CSS, and Python.
             </div>
             <br>
