@@ -150,7 +150,7 @@ a.side-button:hover {
   
 #right {
     grid-area: rightcontent;
-    height: 500px;
+    
     display:flex;
     flex-direction: column;
     justify-content: space-around;
